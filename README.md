@@ -13,4 +13,4 @@ To run :
 -run "npm run dev"
 -Project will start at localhost 3000
 
-*Backend Not finished 
+*Backend Not finished. 
