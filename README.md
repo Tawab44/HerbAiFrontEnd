@@ -7,7 +7,7 @@
 - TypeScript Support 
 
 To run :
--Download zip file dont git-clone
+-Download zip file or git-clone
 -Go the the project directory
 -run "npm install" 
 -run "npm run dev"

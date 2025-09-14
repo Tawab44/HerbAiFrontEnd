@@ -59,7 +59,7 @@ const featuresData: Feature[] = [
     ),
     title: "How Herb AI Works",
     paragraph:
-      "Herb AI uses advanced machine learning to identify herbs from images. Our model is powered by Convolutional Neural Networks (CNNs) and popular architectures like ResNet, DenseNet, and InceptionV3. These networks analyze image features and classify them into over 100 herb types.",
+      "Herb AI uses advanced machine learning to identify herbs from images. Our model is powered by Convolutional Neural Networks (CNNs) and popular architectures like ResNet, DenseNet, and InceptionV3. These networks analyze image features and classify them into over 25 herb types.",
   },
   {
     id: 5,

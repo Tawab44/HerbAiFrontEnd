@@ -20,6 +20,7 @@ const Hero = () => {
                    herb information. Built with Next.js 13 and Tailwind CSS, it’s fast, responsive, and perfect for anyone curious
                     about the plants around them.
                 </p>
+                
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
                     href=""

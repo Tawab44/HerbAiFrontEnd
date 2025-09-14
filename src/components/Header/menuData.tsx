@@ -44,13 +44,13 @@ const menuData: Menu[] = [
       },
       {
         id: 43,
-        title: "Blog Grid Page",
+        title: "Blog Page",
         path: "/blog",
         newTab: false,
       },
       {
         id: 44,
-        title: "Blog Sidebar Page",
+        title: "Search Blogs",
         path: "/blog-sidebar",
         newTab: false,
       },
