@@ -1,0 +1,16 @@
+Sample api endpoint
+{
+  "prediction": "Ocimum tenuiflorum",
+  "accuracy": 96.45,
+  "rmse": 0.1823,
+  "profile": {
+    "common_name": "Tulsi",
+    "scientific_name": "Ocimum tenuiflorum",
+    "sanskrit_name": "तुलसी (Tulasi)",
+    "height": "30–60 cm",
+    "uses": ["Boosts immunity", "Reduces stress"],
+    "medical_properties": ["Antiviral", "Antifungal"],
+    "symptoms_treated": ["Cold", "Cough", "Fever"]
+  },
+  "uploaded_photo_url": "/uploads/xyz123.jpg"
+}

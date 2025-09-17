@@ -1,0 +1,39 @@
+//Sample DB Schmema
+CREATE TABLE plants (
+    id SERIAL PRIMARY KEY,
+    common_name VARCHAR(100) NOT NULL,
+    scientific_name VARCHAR(200) NOT NULL,
+    sanskrit_name VARCHAR(200),
+    height VARCHAR(50)
+);
+
+-- Stores predictions made by the ML model
+CREATE TABLE predictions (
+    id SERIAL PRIMARY KEY,
+    plant_id INT REFERENCES plants(id) ON DELETE CASCADE,
+    prediction VARCHAR(200),
+    accuracy FLOAT,
+    rmse FLOAT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Stores multiple uses (One plant → many uses)
+CREATE TABLE plant_uses (
+    id SERIAL PRIMARY KEY,
+    plant_id INT REFERENCES plants(id) ON DELETE CASCADE,
+    use TEXT
+);
+
+-- Stores multiple medicinal properties
+CREATE TABLE plant_properties (
+    id SERIAL PRIMARY KEY,
+    plant_id INT REFERENCES plants(id) ON DELETE CASCADE,
+    property TEXT
+);
+
+-- Stores symptoms treated by the plant
+CREATE TABLE plant_symptoms (
+    id SERIAL PRIMARY KEY,
+    plant_id INT REFERENCES plants(id) ON DELETE CASCADE,
+    symptom TEXT
+);
